@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<script src="converter.js"></script>
+	</head>
+
+	<div class="col-md-4"></div>
+	<div class="col-md-8 well">
+		<h3 class="text-primary">Currency Converter</h3>
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<h4>Converter</h4>
+			<hr style="border-top:1px groovy #ccc;"/>
+			<div class="form-group">
+				<select onchange="Currency(); Calculate()" class="form-control" id="converter" style="width:30%;">
+					<option value="Canadian Dollar">Canadian Dollar</option>
+					<option value="Pound">Pound</option>
+					<option value="Naira">Euro</option>
+				</select>
+				<br />
+				
+				<input type="number" oninput="Calculate()" class="form-control" id="value1"/>
+			</div>
+			<br /><br />
+			<div class="form-group">
+				<label>US dollar</label>
+				<input type="number" class="form-control" id="value2" disabled="disabled"/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
